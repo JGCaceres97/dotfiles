@@ -11,9 +11,14 @@ alias cp "cp -i"
 alias df "df -h"
 alias free "free -m"
 
-alias cfgcritty "mousepad ~/.config/alacritty/alacritty.yml"
+alias alacrittycfg "mousepad ~/.config/alacritty/alacritty.yml"
 alias fishcfg "mousepad ~/.config/fish/config.fish"
+alias install "yay -S"
+alias pacmancache "sudo pacman -Scc"
+alias search "yay -Ss"
 alias starshipcfg "mousepad ~/.config/starship.toml"
+alias update "yay -Syu"
+alias yaycache "yay -Scc"
 
 # Prompt
 starship init fish | source
