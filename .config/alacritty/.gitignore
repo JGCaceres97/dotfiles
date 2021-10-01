@@ -2,4 +2,4 @@
 !.gitignore
 
 !README.md
-!config.yml
+!alacritty.yml
