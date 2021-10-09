@@ -11,6 +11,7 @@ alias cp "cp -i"
 alias df "df -h"
 alias free "free -m"
 
+alias .. "cd .."
 alias alacrittycfg "mousepad ~/.config/alacritty/alacritty.yml"
 alias fishcfg "mousepad ~/.config/fish/config.fish"
 alias install "yay -S"
