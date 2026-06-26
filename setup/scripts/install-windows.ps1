@@ -1,5 +1,5 @@
 $Root = $HOME
-$Map = Join-Path $Root "mappings\windows.map"
+$Map = Join-Path $Root "setup\mappings\windows.map"
 
 function Confirm-Replace($Target)
 {

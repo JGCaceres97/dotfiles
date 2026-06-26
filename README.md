@@ -36,14 +36,14 @@ copy zed/settings.json -> %APPDATA%/Zed/settings.json
 ### Linux
 
 ```bash
-chmod +x ~/scripts/install-linux.sh
-~/scripts/install-linux.sh
+chmod +x ~/setup/scripts/install-linux.sh
+~/setup/scripts/install-linux.sh
 ```
 
 ### Windows (PowerShell)
 
 ```powershell
-.\scripts\install-windows.ps1
+.\setup\scripts\install-windows.ps1
 ```
 
 ---
@@ -72,8 +72,8 @@ link powershell/Microsoft.PowerShell_profile.ps1 -> %USERPROFILE%/Documents/Wind
 
 Cada sistema tiene su propio archivo de mapeo:
 
-- `mappings/linux.map`
-- `mappings/windows.map`
+- `setup/mappings/linux.map`
+- `setup/mappings/windows.map`
 
 Esto permite diferencias en rutas y configuraciones por sistema operativo.
 

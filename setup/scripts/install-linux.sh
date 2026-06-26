@@ -3,7 +3,7 @@
 set -euo pipefail
 
 ROOT="$HOME"
-MAP="$ROOT/mappings/linux.map"
+MAP="$ROOT/setup/mappings/linux.map"
 
 confirm_replace() {
   local dst="$1"
