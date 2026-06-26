@@ -1,9 +1,3 @@
 *
 !.gitignore
 !.gitattributes
-
-!.config
-!.config/starship.toml
-
-!zed
-!zed/settings.json
