@@ -1,0 +1,2 @@
+copy zed/settings.json -> %APPDATA%/Zed/settings.json
+link powershell/Microsoft.PowerShell_profile.ps1 -> %USERPROFILE%/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
