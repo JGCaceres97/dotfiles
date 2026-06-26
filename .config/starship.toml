@@ -1,0 +1,265 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '$all'
+
+right_format = """
+$cmd_duration\
+$battery\
+$time\
+$status\
+$sudo\
+"""
+
+palette = 'theme'
+
+[palettes.theme]
+color_red0 = '#e06c75'
+color_red1 = '#be5046'
+color_green = '#98c379'
+color_yellow = '#e5c07b'
+color_blue = '#61afef'
+color_purple = '#c678dd'
+color_cyan = '#56b6c2'
+color_orange = '#d19a66'
+
+[aws]
+symbol = "  "
+
+[battery]
+disabled = false
+format = '[$symbol $percentage]($style)'
+
+[[battery.display]]
+threshold = 10
+style = "bold fg:color_red1"
+discharging_symbol = "󰁺"
+charging_symbol = "󰢜"
+
+[[battery.display]]
+threshold = 20
+style = "bold fg:color_red0"
+discharging_symbol = "󰁻"
+charging_symbol = "󰂆"
+
+[[battery.display]]
+threshold = 30
+style = "bold fg:color_yellow"
+discharging_symbol = "󰁼"
+charging_symbol = "󰂇"
+
+[[battery.display]]
+threshold = 40
+style = "bold fg:color_yellow"
+discharging_symbol = "󰁽"
+charging_symbol = "󰂈"
+
+[[battery.display]]
+threshold = 50
+style = "bold fg:color_yellow"
+discharging_symbol = "󰁾"
+charging_symbol = "󰢝"
+
+[[battery.display]]
+threshold = 60
+style = "bold fg:color_green"
+discharging_symbol = "󰁿"
+charging_symbol = "󰂉"
+
+[[battery.display]]
+threshold = 70
+style = "bold fg:color_green"
+discharging_symbol = "󰂀"
+charging_symbol = "󰢞"
+
+[[battery.display]]
+threshold = 80
+style = "bold fg:color_green"
+discharging_symbol = "󰂁"
+charging_symbol = "󰂊"
+
+[[battery.display]]
+threshold = 90
+style = "bold fg:color_green"
+discharging_symbol = "󰂂"
+charging_symbol = "󰂋"
+
+[[battery.display]]
+style = "bold fg:color_green"
+discharging_symbol = "󰁹"
+charging_symbol = "󰂅"
+threshold = 100
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[character]
+success_symbol = '[](bold color_cyan)'
+error_symbol = '[](bold color_red1)'
+
+[cmd_duration]
+min_time = 0
+format = '[$duration]($style)'
+style = "bold color_yellow"
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = " 󰌾"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"dev" = "󰲋 "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fill]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+style = 'bold color_purple'
+format = '[$ssh_symbol$hostname]($style) '
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+disabled = true
+symbol = "󰏗 "
+
+[pijul_channel]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[status]
+format = ' [$symbol$status]($style)'
+
+[sudo]
+disabled = false
+symbol = " 💀"
+format = '[$symbol]($style)'
+
+[time]
+disabled = false
+use_12hr = true
+time_format = "%I:%M %p"
+style = "bold white"
+format = ' [󰥔 $time]($style)'
+
+[username]
+style_user = 'bold color_yellow'
+style_root = 'bold color_red1'

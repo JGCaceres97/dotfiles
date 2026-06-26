@@ -1,3 +1,6 @@
 *
 !.gitignore
 !.gitattributes
+
+!.config
+!.config/starship.toml
