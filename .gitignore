@@ -4,3 +4,6 @@
 
 !.config
 !.config/starship.toml
+
+!zed
+!zed/settings.json
