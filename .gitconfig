@@ -1,0 +1,18 @@
+[user]
+	name = Joseph Cáceres
+	email = jgcaceres97@gmail.com
+
+[push]
+	autoSetupRemote = true
+
+[alias]
+	br = branch
+	cm = commit -m
+	sh = stash
+	st = status
+	sw = switch
+
+	last = show --status
+	unstage = restore --staged
+	discard = restore .
+	recent = for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short)'
