@@ -12,7 +12,7 @@ confirm_replace() {
     return 0
   fi
 
-  read -rp "'$dst' ya existe. ¿Reemplazar? [y/N] " answer
+  read -rp "'$dst' ya existe. ¿Reemplazar? [y/N] " answer <&3
 
   case "$answer" in
     y|Y|yes|YES)
@@ -34,6 +34,7 @@ while IFS= read -r line; do
 
   src="$ROOT/$source"
   dst="${destination/#\~/$HOME}"
+  dst="$(eval echo "$dst")"
 
   mkdir -p "$(dirname "$dst")"
 
@@ -71,7 +72,7 @@ while IFS= read -r line; do
 
   esac
 
-done < "$MAP"
+done < "$MAP" 3</dev/tty
 
 echo
 echo "Instalación finalizada."

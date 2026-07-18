@@ -1,4 +1,4 @@
-$Root = $HOME
+﻿$Root = $HOME
 $Map = Join-Path $Root "setup\mappings\windows.map"
 
 function Confirm-Replace($Target)
@@ -51,11 +51,9 @@ Get-Content $Map | ForEach-Object {
     -Force `
     -Path (Split-Path $Target) | Out-Null
 
-  switch ($Action)
-  {
+  switch ($Action) {
 
-    "link"
-    {
+    "link" {
 
       if (Test-Path $Target)
       {
@@ -86,8 +84,7 @@ Get-Content $Map | ForEach-Object {
       Write-Host "🔗 Enlazado: $Target"
     }
 
-    "copy"
-    {
+    "copy" {
 
       if (Confirm-Replace $Target)
       {
@@ -100,8 +97,7 @@ Get-Content $Map | ForEach-Object {
       }
     }
 
-    default
-    {
+    default {
 
       Write-Host "Acción desconocida: $Action"
 
