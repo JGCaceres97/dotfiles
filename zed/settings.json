@@ -8,7 +8,7 @@
     "default_profile": "ask",
     "default_width": 500,
     "dock": "right",
-    "enabled": false,
+    "enabled": true,
     "sidebar_side": "left"
   },
   "auto_indent_on_paste": true,
@@ -61,6 +61,7 @@
     "JSON": { "formatter": "prettier" },
     "JSONC": { "formatter": "prettier" },
     "TSX": {
+      "code_actions_on_format": { "source.fixAll": true, "source.organizeImports": true },
       "formatter": "prettier",
       "language_servers": ["eslint", "typescript-language-server"]
     },
